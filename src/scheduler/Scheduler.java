@@ -53,7 +53,7 @@ public class Scheduler {
     		String remTime = kb.nextLine();
     		System.out.println("What day is the String you want to remove?");
     		String day = kb.nextLine();
-//    		removeString(remTime, day);
+    		removeString(remTime, day);
     	} else {
     		System.out.println("What day would you like to view");
     		String day = kb.nextLine();
@@ -78,7 +78,7 @@ public class Scheduler {
     public static void addString(String eventText, String day) {
     	if (day.equals("Monday")) {
 			wholeWeek[0].events.add(eventText);
-		} else if(day.equals("Teusday")) {
+		} else if(day.equals("Tuesday")) {
 			wholeWeek[1].events.add(eventText);
 		}else if(day.equals("Wednesday")) {
 			wholeWeek[2].events.add(eventText);
@@ -106,7 +106,7 @@ public class Scheduler {
     		String remTime = kb.nextLine();
     		System.out.println("What day is the String you want to remove?");
     		String days = kb.nextLine();
-//    		removeString(remTime, day);
+    		removeString(remTime, day);
     	} else {
     		System.out.println("What day would you like to view");
     		String days = kb.nextLine();
@@ -185,6 +185,8 @@ public class Scheduler {
 				}
 			}
 		}
+    	System.out.println("Test");
+    	viewString("Monday");
     }
     public static void viewString (String day) {
     	if (day.equals("Monday")) {
@@ -217,7 +219,7 @@ public class Scheduler {
     		String remTime = kb.nextLine();
     		System.out.println("What day is the String you want to remove?");
     		String days = kb.nextLine();
-//    		removeString(remTime, day);
+    		removeString(remTime, day);
     	} else {
     		System.out.println("What day would you like to view");
     		String days = kb.nextLine();
